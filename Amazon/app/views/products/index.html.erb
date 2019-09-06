@@ -1,0 +1,14 @@
+
+<article>
+
+
+
+<%= link_to 'New Product', :new_product %>
+
+<% @products.each do |product| %>
+    <a href=<%= "products/#{product.id}" %>><p><%= product.title %></p></a>
+<% end %>
+
+
+
+</article>

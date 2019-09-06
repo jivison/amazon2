@@ -1,0 +1,26 @@
+@import url("base.css");
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1em;
+}
+
+.menu-item {
+    font-size: 2.369em;
+}
+
+.menu-item a:link, .menu-item a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.menu-item a:hover {
+    text-decoration: none;
+    color: rgb(109, 108, 108);
+}
+
+.ghost {
+    flex: 0.3;   
+}

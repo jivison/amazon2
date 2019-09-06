@@ -1,0 +1,16 @@
+<article>
+
+    <% @product.errors.any? %>
+    <ul> <% @product.errors.full_messages.each do |msg|  %>
+        <p class="error-msg"><%= msg %></p>
+    </ul>
+    <% end %>
+
+    <%= render 'form' %>
+
+
+</article>
+
+
+
+

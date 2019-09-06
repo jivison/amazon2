@@ -1,0 +1,32 @@
+.new-product-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.new-product-form * {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+}
+
+.new-product-form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+}
+
+.new-product-form input[type=submit] {
+    width: 50%;
+    border: 2px black solid;
+    background-color: transparent;
+}
+
+.new-product-form input[type=submit]:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+.error-msg {
+    color: red;
+    font-size: 1.5em;
+    padding-left: 1em;
+}

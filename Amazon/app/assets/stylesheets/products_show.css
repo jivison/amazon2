@@ -1,0 +1,50 @@
+.description {
+    width: 50%;
+    margin-bottom: 1em;
+}
+
+.review {
+    border: 2px black solid;
+    width: 10%;
+    border-radius: 1em;
+    padding: 1em;
+    margin: 1em;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form div {
+    display: flex;
+    align-items: center;    
+}
+
+.form * {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+}
+
+.form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+}
+
+.form input[type=submit] {
+    width: 20%;
+    border: 2px black solid;
+    background-color: transparent;
+}
+
+.form input[type=submit]:hover {
+    background-color: rgb(240, 239, 239);
+}
+
+.error-msg {
+    color: red;
+    font-size: 1.5em;
+    padding-left: 1em;
+}

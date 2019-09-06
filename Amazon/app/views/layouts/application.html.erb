@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Amazon</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_pack_tag 'application' %>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <ul class="menu">
+          <li class="ghost"></li>
+          <li class="menu-item"><a href="/home/index">Home</a></li>
+          <li class="menu-item"><a href="/home/about">About</a></li>
+          <li class="menu-item"><a href="/home/contact_us">Contact Us</a></li>
+          <li class="menu-item"><a href="/products/new">New Product</a></li>
+          <li class="menu-item"><a href="/products">Products</a></li>
+          <li class="ghost"></li>
+      </ul>
+    </div>
+    <%= yield %>
+  </body>
+</html>
+

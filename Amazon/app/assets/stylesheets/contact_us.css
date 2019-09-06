@@ -1,0 +1,26 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form * {
+    padding: 0.5em;
+    margin: 0.5em;
+    font-family: "Poppins", sans-serif;
+    font-size: 1em;
+}
+
+.contact-form label {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+}
+
+.contact-form input[type=submit] {
+    width: 50%;
+    border: 2px black solid;
+    background-color: transparent;
+}
+
+.contact-form input[type=submit]:hover {
+    background-color: rgb(240, 239, 239);
+}

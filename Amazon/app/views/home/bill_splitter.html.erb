@@ -1,0 +1,22 @@
+
+
+<article>
+    <div>
+        <%= form_tag("bill_splitter", class: "splitter-form", method: "post") do %>
+            <%= label_tag(:amount, "Amount ($)") %>
+            <%= text_field_tag(:amount) %>
+            <%= label_tag(:tax, "Tax (%)") %>
+            <%= text_field_tag(:tax) %>
+            <%= label_tag(:tip, "Tip (%)") %>
+            <%= text_field_tag(:tip) %>
+            <%= label_tag(:number_of_people, "Number of People") %>
+            <%= text_field_tag(:number_of_people) %>
+            <%= submit_tag("Calculate Bill") %>
+    <% end %>
+
+        <% if params["amount"] %>
+            <h5>Each person should pay: </h5>
+            <h5 style="font-weight: 800">$<%= (((params["amount"].to_i * params["tax"].to_i / 100.0) + (params["amount"].to_i * params["tip"].to_i / 100.0) + params["amount"].to_i) / params["number_of_people"].to_f).to_d.truncate(2).to_f %></h5>
+        <% end %>
+
+</article>
